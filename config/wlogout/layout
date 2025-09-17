@@ -6,13 +6,13 @@
 }
 {
     "label" : "reboot",
-    "action" : "systemctl reboot",
+    "action" : "systemctl reboot || loginctl reboot",
     "text" : "Reboot",
     "keybind" : "r"
 }
 {
     "label" : "shutdown",
-    "action" : "systemctl poweroff",
+    "action" : "systemctl poweroff || loginctl poweroff",
     "text" : "Shutdown",
     "keybind" : "s"
 }
@@ -24,13 +24,13 @@
 }
 {
     "label" : "suspend",
-    "action" : "systemctl suspend",
+    "action" : "systemctl suspend || loginctl suspend",
     "text" : "Suspend",
     "keybind" : "u"
 }
 {
     "label" : "hibernate",
-    "action" : "systemctl hibernate",
+    "action" : "systemctl hibernate || loginctl hibernate",
     "text" : "Hibernate",
     "keybind" : "h"
 }

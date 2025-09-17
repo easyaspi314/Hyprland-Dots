@@ -149,7 +149,7 @@
 
 "custom/reboot": {
     "format": "󰜉",
-    "on-click": "systemctl reboot",
+    "on-click": "systemctl reboot || loginctl reboot",
     "tooltip": true,
 	"tooltip-format": "Left Click: Reboot",
 },
